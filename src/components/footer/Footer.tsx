@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Brand - Left side */}
           <div>
             <img 
-              src="/Linea_Jewelry_Inc-2.svg" 
+              src="/logo Bena.svg" 
               alt="Bena" 
               className="mb-4 h-6 w-auto"
             />

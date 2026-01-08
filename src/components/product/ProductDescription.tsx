@@ -43,14 +43,14 @@ const ProductDescription = () => {
         {isDescriptionOpen && (
           <div className="pb-6 space-y-4">
             <p className="text-sm font-light text-muted-foreground leading-relaxed">
-              This design emerges from a philosophy of essential form. Every curve serves a purpose, every line 
-              exists by necessity. The result is an accessory that feels both intentional and effortless, 
-              capturing light in ways that reveal its character gradually.
+              Each Bena piece begins with a single question: what is truly necessary? Through a process of careful 
+              reduction, we remove everything that doesn't serve the design's essential purpose. What remains is 
+              pure intention—a form that exists not to impress, but to enhance the wearer's natural presence.
             </p>
             <p className="text-sm font-light text-muted-foreground leading-relaxed">
-              Crafted with materials selected for their inherent beauty and longevity, this piece is built to 
-              become part of your daily ritual. Its understated presence means it transitions seamlessly from 
-              morning to evening, from casual to formal, without ever feeling out of place.
+              The materials we choose are selected for their ability to age with grace. Over time, they develop 
+              a patina that tells the story of their journey with you. This piece is designed to become more 
+              beautiful with wear, accumulating subtle marks that reflect a life well-lived.
             </p>
           </div>
         )}

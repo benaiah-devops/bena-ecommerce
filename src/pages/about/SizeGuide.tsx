@@ -18,29 +18,29 @@ const SizeGuide = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Size Guide" 
-          subtitle="Find your perfect fit with our comprehensive sizing guide"
+          subtitle="Ensuring your Bena piece fits as perfectly as it was designed"
         />
         
         <ContentSection title="Ring Sizing">
           <div className="space-y-8">
             <div className="bg-muted/10 rounded-lg p-8">
-              <h3 className="text-xl font-light text-foreground mb-6">How to Measure Your Ring Size</h3>
+              <h3 className="text-xl font-light text-foreground mb-6">Determining Your Ring Size</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
-                  <h4 className="font-medium text-foreground">Method 1: Using a Ring You Own</h4>
+                  <h4 className="font-medium text-foreground">Using an Existing Ring</h4>
                   <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                    <li>Take a ring that fits comfortably on your desired finger</li>
-                    <li>Place it on a ruler and measure the inner diameter in millimeters</li>
-                    <li>Use our size chart below to find your size</li>
+                    <li>Select a ring that fits comfortably on the finger where you'll wear your Bena piece</li>
+                    <li>Place it flat on a ruler and measure the inside diameter in millimeters</li>
+                    <li>Match this measurement to our size conversion chart below</li>
                   </ol>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-medium text-foreground">Method 2: Using String or Paper</h4>
+                  <h4 className="font-medium text-foreground">Measuring Your Finger</h4>
                   <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                    <li>Wrap string or paper around your finger where the ring will sit</li>
-                    <li>Mark where the material overlaps</li>
-                    <li>Measure the length in millimeters</li>
-                    <li>Divide by 3.14 to get the diameter</li>
+                    <li>Wrap a narrow strip of paper or string around the base of your finger</li>
+                    <li>Mark the point where the ends meet</li>
+                    <li>Measure this length in millimeters</li>
+                    <li>Divide by 3.14159 (π) to calculate the diameter, then reference our chart</li>
                   </ol>
                 </div>
               </div>
@@ -86,42 +86,44 @@ const SizeGuide = () => {
         <ContentSection title="Bracelet & Necklace Sizing">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <h3 className="text-xl font-light text-foreground">Bracelet Sizes</h3>
+              <h3 className="text-xl font-light text-foreground">Bracelet Sizing</h3>
               <div className="space-y-4">
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Small</span>
-                  <span className="text-foreground">6.5" - 7"</span>
+                  <span className="text-muted-foreground">Petite</span>
+                  <span className="text-foreground">6.25" - 6.75" (16-17cm)</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Medium</span>
-                  <span className="text-foreground">7" - 7.5"</span>
+                  <span className="text-muted-foreground">Standard</span>
+                  <span className="text-foreground">7" - 7.5" (18-19cm)</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Large</span>
-                  <span className="text-foreground">7.5" - 8"</span>
+                  <span className="text-muted-foreground">Extended</span>
+                  <span className="text-foreground">7.75" - 8.25" (20-21cm)</span>
                 </div>
+                <p className="text-sm text-muted-foreground mt-4">Measure around your wrist at the narrowest point, then add 0.5" to 1" for a comfortable fit.</p>
               </div>
             </div>
             
             <div className="space-y-6">
-              <h3 className="text-xl font-light text-foreground">Necklace Lengths</h3>
+              <h3 className="text-xl font-light text-foreground">Necklace Length Guide</h3>
               <div className="space-y-4">
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Choker</span>
-                  <span className="text-foreground">14" - 16"</span>
+                  <span className="text-muted-foreground">Collarbone</span>
+                  <span className="text-foreground">15" - 16" (38-41cm)</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Princess</span>
-                  <span className="text-foreground">17" - 19"</span>
+                  <span className="text-muted-foreground">Classic</span>
+                  <span className="text-foreground">18" - 20" (46-51cm)</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Matinee</span>
-                  <span className="text-foreground">20" - 24"</span>
+                  <span className="text-muted-foreground">Extended</span>
+                  <span className="text-foreground">22" - 24" (56-61cm)</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Opera</span>
-                  <span className="text-foreground">28" - 36"</span>
+                  <span className="text-muted-foreground">Statement</span>
+                  <span className="text-foreground">28" - 32" (71-81cm)</span>
                 </div>
+                <p className="text-sm text-muted-foreground mt-4">Consider your neckline and personal preference. Most find 18" to 20" offers the most versatility.</p>
               </div>
             </div>
           </div>
@@ -130,8 +132,9 @@ const SizeGuide = () => {
         <ContentSection title="Need Help?">
           <div className="space-y-6">
             <p className="text-muted-foreground">
-              Still unsure about sizing? Our jewelry consultants are here to help you find the perfect fit. 
-              Download our printable size guide or schedule a virtual consultation.
+              Finding the right size ensures your Bena piece sits exactly as intended. If you're uncertain, 
+              our specialists can guide you through measurements or arrange a fitting at one of our locations. 
+              We also offer a printable sizing guide for your convenience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="outline" className="rounded-none">

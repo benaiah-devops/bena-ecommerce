@@ -1,5 +1,5 @@
-import earringsCollection from "@/assets/earrings-collection.png";
-import linkBracelet from "@/assets/link-bracelet.png";
+import chatgptImage1 from "@/assets/ChatGPT Image Jan 8, 2026, 09_35_13 AM.png";
+import chatgptImage2 from "@/assets/ChatGPT Image Jan 8, 2026, 09_41_33 AM.png";
 import { Link } from "react-router-dom";
 
 const FiftyFiftySection = () => {
@@ -10,8 +10,8 @@ const FiftyFiftySection = () => {
           <Link to="/category/earrings" className="block">
             <div className="w-full aspect-square mb-3 overflow-hidden">
               <img 
-                src={earringsCollection} 
-                alt="Earrings collection" 
+                src={chatgptImage1} 
+                alt="Bena collection" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -30,8 +30,8 @@ const FiftyFiftySection = () => {
           <Link to="/category/bracelets" className="block">
             <div className="w-full aspect-square mb-3 overflow-hidden">
               <img 
-                src={linkBracelet} 
-                alt="Chain link bracelet" 
+                src={chatgptImage2} 
+                alt="Bena accessories" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>

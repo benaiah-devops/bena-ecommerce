@@ -1,12 +1,12 @@
-import heroImage from "@/assets/hero-image.png";
+import chatgptHero from "@/assets/ChatGPT Image Jan 8, 2026, 09_35_11 AM.png";
 
 const LargeHero = () => {
   return (
     <section className="w-full mb-16 px-6">
       <div className="w-full aspect-[16/9] mb-3 overflow-hidden">
         <img 
-          src={heroImage} 
-          alt="Modern jewelry collection" 
+          src={chatgptHero} 
+          alt="Bena luxury accessories" 
           className="w-full h-full object-cover"
         />
       </div>

@@ -1,5 +1,5 @@
-import circularCollection from "@/assets/circular-collection.png";
-import organicEarring from "@/assets/organic-earring.png";
+import chatgptImage3 from "@/assets/ChatGPT Image Jan 8, 2026, 09_43_19 AM.png";
+import chatgptImage4 from "@/assets/ChatGPT Image Jan 8, 2026, 09_35_11 AM.png";
 import { Link } from "react-router-dom";
 
 const OneThirdTwoThirdsSection = () => {
@@ -10,8 +10,8 @@ const OneThirdTwoThirdsSection = () => {
           <Link to="/category/rings" className="block">
             <div className="w-full h-[500px] lg:h-[800px] mb-3 overflow-hidden">
               <img 
-                src={organicEarring} 
-                alt="Artisan crafted jewelry" 
+                src={chatgptImage3} 
+                alt="Bena artisan crafted" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -30,8 +30,8 @@ const OneThirdTwoThirdsSection = () => {
           <Link to="/category/necklaces" className="block">
             <div className="w-full h-[500px] lg:h-[800px] mb-3 overflow-hidden">
               <img 
-                src={circularCollection} 
-                alt="Circular jewelry collection" 
+                src={chatgptImage4} 
+                alt="Bena collection" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>

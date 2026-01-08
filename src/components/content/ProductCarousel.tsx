@@ -5,14 +5,12 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import pantheonImage from "@/assets/pantheon.jpg";
-import eclipseImage from "@/assets/eclipse.jpg";
-import haloImage from "@/assets/halo.jpg";
-import obliqueImage from "@/assets/oblique.jpg";
-import lintelImage from "@/assets/lintel.jpg";
-import shadowlineImage from "@/assets/shadowline.jpg";
-import organicEarring from "@/assets/organic-earring.png";
-import linkBracelet from "@/assets/link-bracelet.png";
+import ear1 from "@/assets/ear1.png";
+import ear2 from "@/assets/ear2.png";
+import ear3 from "@/assets/ear3.png";
+import ear11 from "@/assets/ear11.png";
+import ear22 from "@/assets/ear22.png";
+import ear33 from "@/assets/ear33.png";
 
 interface Product {
   id: number;
@@ -28,42 +26,42 @@ const products: Product[] = [
     name: "Aurelia",
     category: "Earrings",
     price: "$2,850",
-    image: pantheonImage,
+    image: ear1,
   },
   {
     id: 2,
     name: "Serenity",
     category: "Bracelets",
     price: "$3,200",
-    image: eclipseImage,
+    image: ear2,
   },
   {
     id: 3,
     name: "Lumina",
     category: "Earrings",
     price: "$1,950",
-    image: haloImage,
+    image: ear3,
   },
   {
     id: 4,
     name: "Essence",
     category: "Earrings",
     price: "$1,650",
-    image: obliqueImage,
+    image: ear11,
   },
   {
     id: 5,
     name: "Vesper",
     category: "Earrings",
     price: "$2,250",
-    image: lintelImage,
+    image: ear22,
   },
   {
     id: 6,
     name: "Zenith",
     category: "Bracelets",
     price: "$3,950",
-    image: shadowlineImage,
+    image: ear33,
   },
 ];
 
@@ -93,7 +91,7 @@ const ProductCarousel = () => {
                           className="w-full h-full object-cover transition-all duration-300 group-hover:opacity-0"
                         />
                         <img
-                          src={product.category === "Earrings" ? organicEarring : linkBracelet}
+                          src={product.image}
                           alt={`${product.name} lifestyle`}
                           className="absolute inset-0 w-full h-full object-cover transition-all duration-300 opacity-0 group-hover:opacity-100"
                         />

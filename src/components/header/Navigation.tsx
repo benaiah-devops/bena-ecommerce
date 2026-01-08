@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import ShoppingBag from "./ShoppingBag";
-import pantheonImage from "@/assets/pantheon.jpg";
-import eclipseImage from "@/assets/eclipse.jpg";
-import haloImage from "@/assets/halo.jpg";
+import ear1 from "@/assets/ear1.png";
+import ear2 from "@/assets/ear2.png";
+import ear3 from "@/assets/ear3.png";
 
 interface CartItem {
   id: number;
@@ -30,7 +30,7 @@ const Navigation = () => {
       id: 1,
       name: "Pantheon",
       price: "$2,850",
-      image: pantheonImage,
+      image: ear1,
       quantity: 1,
       category: "Earrings"
     },
@@ -38,7 +38,7 @@ const Navigation = () => {
       id: 2,
       name: "Eclipse",
       price: "$3,200", 
-      image: eclipseImage,
+      image: ear2,
       quantity: 1,
       category: "Bracelets"
     },
@@ -46,7 +46,7 @@ const Navigation = () => {
       id: 3,
       name: "Halo",
       price: "$1,950",
-      image: haloImage, 
+      image: ear3, 
       quantity: 1,
       category: "Earrings"
     }
@@ -189,7 +189,7 @@ const Navigation = () => {
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <Link to="/" className="block">
             <img 
-              src="/LINEA-1.svg" 
+              src="/logo Bena.svg" 
               alt="Bena" 
               className="h-6 w-auto"
             />

@@ -7,8 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
-import pantheonImage from "@/assets/pantheon.jpg";
-import eclipseImage from "@/assets/eclipse.jpg";
+import ear1 from "@/assets/ear1.png";
+import ear2 from "@/assets/ear2.png";
 
 const Checkout = () => {
   const [showDiscountInput, setShowDiscountInput] = useState(false);
@@ -53,7 +53,7 @@ const Checkout = () => {
       name: "Pantheon Ring",
       price: "$2,450",
       quantity: 1,
-      image: pantheonImage,
+      image: ear1,
       size: "54 EU / 7 US"
     },
     {
@@ -61,7 +61,7 @@ const Checkout = () => {
       name: "Eclipse Earrings", 
       price: "$1,850",
       quantity: 1,
-      image: eclipseImage
+      image: ear2
     }
   ]);
 

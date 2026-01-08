@@ -20,7 +20,7 @@ const CheckoutHeader = () => {
             <img 
               src="/logo Bena.svg" 
               alt="Bena" 
-              className="h-6 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 

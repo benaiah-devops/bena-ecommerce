@@ -69,11 +69,10 @@ const Navigation = () => {
   // Preload dropdown images for faster display
   useEffect(() => {
     const imagesToPreload = [
-      "/rings-collection.png",
-      "/earrings-collection.png", 
-      "/arcus-bracelet.png",
-      "/span-bracelet.png",
-      "/founders.png"
+      "/chatgpt-hero-1.png",
+      "/chatgpt-hero-2.png", 
+      "/chatgpt-hero-3.png",
+      "/chatgpt-hero-4.png"
     ];
     
     imagesToPreload.forEach(src => {
@@ -103,8 +102,8 @@ const Navigation = () => {
         "Watches"
       ],
       images: [
-        { src: "/rings-collection.png", alt: "Rings Collection", label: "Rings" },
-        { src: "/earrings-collection.png", alt: "Earrings Collection", label: "Earrings" }
+        { src: "/chatgpt-hero-1.png", alt: "Rings Collection", label: "Rings" },
+        { src: "/chatgpt-hero-2.png", alt: "Earrings Collection", label: "Earrings" }
       ]
     },
     { 
@@ -118,22 +117,22 @@ const Navigation = () => {
         "Pre-Orders"
       ],
       images: [
-        { src: "/arcus-bracelet.png", alt: "Arcus Bracelet", label: "Arcus Bracelet" },
-        { src: "/span-bracelet.png", alt: "Span Bracelet", label: "Span Bracelet" }
+        { src: "/chatgpt-hero-3.png", alt: "New Collection", label: "New Arrivals" },
+        { src: "/chatgpt-hero-4.png", alt: "Featured Pieces", label: "Featured" }
       ]
     },
     { 
-      name: "About", 
-      href: "/about/our-story",
+      name: "Contact Us", 
+      href: "/contact-us",
       submenuItems: [
-        "Our Story",
-        "Sustainability",
-        "Size Guide",
+        "Get in Touch",
+        "Store Locations",
         "Customer Care",
-        "Store Locator"
+        "Size Guide",
+        "Sustainability"
       ],
       images: [
-        { src: "/founders.png", alt: "Company Founders", label: "Read our story" }
+        { src: "/chatgpt-hero-1.png", alt: "Contact Bena", label: "Visit Us" }
       ]
     }
   ];
@@ -191,7 +190,7 @@ const Navigation = () => {
             <img 
               src="/logo Bena.svg" 
               alt="Bena" 
-              className="h-6 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
         </div>
@@ -250,7 +249,7 @@ const Navigation = () => {
                      ?.submenuItems.map((subItem, index) => (
                       <li key={index}>
                         <Link 
-                          to={activeDropdown === "About" ? `/about/${subItem.toLowerCase().replace(/\s+/g, '-')}` : `/category/${subItem.toLowerCase()}`}
+                          to={activeDropdown === "Contact Us" ? (subItem === "Get in Touch" ? "/contact-us" : subItem === "Store Locations" ? "/about/store-locator" : subItem === "Customer Care" ? "/about/customer-care" : subItem === "Size Guide" ? "/about/size-guide" : "/about/sustainability") : `/category/${subItem.toLowerCase()}`}
                           className="text-nav-foreground hover:text-nav-hover transition-colors duration-200 text-sm font-light block py-2"
                         >
                           {subItem}
@@ -273,8 +272,8 @@ const Navigation = () => {
                     } else if (activeDropdown === "New in") {
                       if (image.label === "Arcus Bracelet") linkTo = "/product/arcus-bracelet";
                       else if (image.label === "Span Bracelet") linkTo = "/product/span-bracelet";
-                    } else if (activeDropdown === "About") {
-                      linkTo = "/about/our-story";
+                    } else if (activeDropdown === "Contact Us") {
+                      linkTo = "/contact-us";
                     }
                     
                     return (
@@ -284,7 +283,7 @@ const Navigation = () => {
                           alt={image.alt}
                           className="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-90"
                         />
-                        {(activeDropdown === "Shop" || activeDropdown === "New in" || activeDropdown === "About") && (
+                        {(activeDropdown === "Shop" || activeDropdown === "New in" || activeDropdown === "Contact Us") && (
                           <div className="absolute bottom-2 left-2 text-white text-xs font-light flex items-center gap-1">
                             <span>{image.label}</span>
                             <ArrowRight size={12} />

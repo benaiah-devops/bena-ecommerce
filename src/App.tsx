@@ -14,6 +14,7 @@ import Sustainability from "./pages/about/Sustainability";
 import SizeGuide from "./pages/about/SizeGuide";
 import CustomerCare from "./pages/about/CustomerCare";
 import StoreLocator from "./pages/about/StoreLocator";
+import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/category/:category" element={<Category />} />
           <Route path="/product/:productId" element={<ProductDetail />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about/our-story" element={<OurStory />} />
           <Route path="/about/sustainability" element={<Sustainability />} />
           <Route path="/about/size-guide" element={<SizeGuide />} />

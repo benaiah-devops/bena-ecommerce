@@ -190,7 +190,7 @@ const Navigation = () => {
             <img 
               src="/logo Bena.svg" 
               alt="Bena" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
         </div>

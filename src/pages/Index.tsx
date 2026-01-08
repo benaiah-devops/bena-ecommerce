@@ -1,5 +1,6 @@
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import AnimatedHeroSection from "../components/content/AnimatedHeroSection";
 import LargeHero from "../components/content/LargeHero";
 import FiftyFiftySection from "../components/content/FiftyFiftySection";
 import OneThirdTwoThirdsSection from "../components/content/OneThirdTwoThirdsSection";
@@ -11,7 +12,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <main className="pt-6">
+      <main>
+        <AnimatedHeroSection />
         <FiftyFiftySection />
         <ProductCarousel />
         <LargeHero />

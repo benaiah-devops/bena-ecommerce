@@ -8,7 +8,7 @@ const Footer = () => {
             <img 
               src="/logo Bena.svg" 
               alt="Bena" 
-              className="mb-4 h-10 w-auto"
+              className="mb-4 h-14 w-auto"
             />
             <p className="text-sm font-light text-black/70 leading-relaxed max-w-md mb-6">
               Where restraint becomes the ultimate form of expression

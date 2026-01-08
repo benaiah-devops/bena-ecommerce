@@ -5,16 +5,23 @@ import ear2 from "@/assets/ear2.png";
 import ear3 from "@/assets/ear3.png";
 import ear11 from "@/assets/ear11.png";
 import ear22 from "@/assets/ear22.png";
+import ear33 from "@/assets/ear33.png";
 
-const productImages = [
-  ear1,
-  ear2,
-  ear3,
-  ear11,
-  ear22,
-];
+interface ProductImageGalleryProps {
+  productId?: string;
+}
 
-const ProductImageGallery = () => {
+// Helper to get 2 images based on product ID
+const getProductImages = (productId: string | undefined): string[] => {
+  const id = productId ? parseInt(productId) : 1;
+  const index = (id - 1) % 3;
+  const firstImages = [ear1, ear2, ear3];
+  const secondImages = [ear11, ear22, ear33];
+  return [firstImages[index], secondImages[index]];
+};
+
+const ProductImageGallery = ({ productId }: ProductImageGalleryProps) => {
+  const productImages = getProductImages(productId);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isZoomOpen, setIsZoomOpen] = useState(false);
   const [zoomInitialIndex, setZoomInitialIndex] = useState(0);

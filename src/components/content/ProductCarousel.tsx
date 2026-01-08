@@ -18,7 +18,19 @@ interface Product {
   category: string;
   price: string;
   image: string;
+  image2: string;
 }
+
+// Helper to get images based on product index (0-7)
+const getProductImages = (index: number) => {
+  const firstImages = [ear1, ear2, ear3];
+  const secondImages = [ear11, ear22, ear33];
+  const imgIndex = index % 3;
+  return {
+    image: firstImages[imgIndex],
+    image2: secondImages[imgIndex],
+  };
+};
 
 const products: Product[] = [
   {
@@ -26,42 +38,56 @@ const products: Product[] = [
     name: "Aurelia",
     category: "Earrings",
     price: "$2,850",
-    image: ear1,
+    ...getProductImages(0),
   },
   {
     id: 2,
     name: "Serenity",
     category: "Bracelets",
     price: "$3,200",
-    image: ear2,
+    ...getProductImages(1),
   },
   {
     id: 3,
     name: "Lumina",
     category: "Earrings",
     price: "$1,950",
-    image: ear3,
+    ...getProductImages(2),
   },
   {
     id: 4,
     name: "Essence",
     category: "Earrings",
     price: "$1,650",
-    image: ear11,
+    ...getProductImages(3),
   },
   {
     id: 5,
     name: "Vesper",
     category: "Earrings",
     price: "$2,250",
-    image: ear22,
+    ...getProductImages(4),
   },
   {
     id: 6,
     name: "Zenith",
     category: "Bracelets",
     price: "$3,950",
-    image: ear33,
+    ...getProductImages(5),
+  },
+  {
+    id: 7,
+    name: "Meridian",
+    category: "Earrings",
+    price: "$2,450",
+    ...getProductImages(6),
+  },
+  {
+    id: 8,
+    name: "Vertex",
+    category: "Bracelets",
+    price: "$2,800",
+    ...getProductImages(7),
   },
 ];
 
@@ -84,11 +110,16 @@ const ProductCarousel = () => {
                  <Link to={`/product/${product.id}`}>
                   <Card className="border-none shadow-none bg-transparent group">
                     <CardContent className="p-0">
-                      <div className="aspect-square mb-3 overflow-hidden bg-muted/10 relative">
+                      <div className="aspect-square mb-3 overflow-hidden bg-muted/10 relative group/image">
                         <img
                           src={product.image}
                           alt={product.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover transition-opacity duration-300 group-hover/image:opacity-0"
+                        />
+                        <img
+                          src={product.image2}
+                          alt={`${product.name} view 2`}
+                          className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover/image:opacity-100"
                         />
                         <div className="absolute inset-0 bg-black/[0.03]"></div>
                         {(product.id === 1 || product.id === 3) && (

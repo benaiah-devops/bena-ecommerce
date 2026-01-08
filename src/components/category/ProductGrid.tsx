@@ -14,180 +14,80 @@ interface Product {
   category: string;
   price: string;
   image: string;
+  image2: string;
   isNew?: boolean;
 }
 
-// Extended product list for category page
+// Helper to get images based on product index (0-7)
+const getProductImages = (index: number) => {
+  const firstImages = [ear1, ear2, ear3];
+  const secondImages = [ear11, ear22, ear33];
+  const imgIndex = index % 3;
+  return {
+    image: firstImages[imgIndex],
+    image2: secondImages[imgIndex],
+  };
+};
+
+// Only 8 products for category page
 const products: Product[] = [
   {
     id: 1,
-    name: "Pantheon",
+    name: "Aurelia",
     category: "Earrings",
     price: "$2,850",
-    image: ear1,
     isNew: true,
+    ...getProductImages(0),
   },
   {
     id: 2,
-    name: "Eclipse",
+    name: "Serenity",
     category: "Bracelets",
     price: "$3,200",
-    image: ear2,
+    ...getProductImages(1),
   },
   {
     id: 3,
-    name: "Halo",
+    name: "Lumina",
     category: "Earrings",
     price: "$1,950",
-    image: ear3,
     isNew: true,
+    ...getProductImages(2),
   },
   {
     id: 4,
-    name: "Oblique",
+    name: "Essence",
     category: "Earrings",
     price: "$1,650",
-    image: ear11,
+    ...getProductImages(3),
   },
   {
     id: 5,
-    name: "Lintel",
+    name: "Vesper",
     category: "Earrings",
     price: "$2,250",
-    image: ear22,
+    ...getProductImages(4),
   },
   {
     id: 6,
-    name: "Shadowline",
+    name: "Zenith",
     category: "Bracelets",
     price: "$3,950",
-    image: ear33,
+    ...getProductImages(5),
   },
   {
     id: 7,
     name: "Meridian",
     category: "Earrings",
     price: "$2,450",
-    image: ear1,
+    ...getProductImages(6),
   },
   {
     id: 8,
     name: "Vertex",
     category: "Bracelets",
     price: "$2,800",
-    image: ear2,
-  },
-  {
-    id: 9,
-    name: "Apex",
-    category: "Earrings",
-    price: "$1,550",
-    image: ear3,
-  },
-  {
-    id: 10,
-    name: "Zenith",
-    category: "Earrings",
-    price: "$1,850",
-    image: ear11,
-  },
-  {
-    id: 11,
-    name: "Prism",
-    category: "Earrings",
-    price: "$2,050",
-    image: ear22,
-  },
-  {
-    id: 12,
-    name: "Radiant",
-    category: "Bracelets",
-    price: "$3,650",
-    image: ear33,
-  },
-  {
-    id: 13,
-    name: "Stellar",
-    category: "Earrings",
-    price: "$2,150",
-    image: ear1,
-  },
-  {
-    id: 14,
-    name: "Cosmos",
-    category: "Bracelets",
-    price: "$2,950",
-    image: ear2,
-  },
-  {
-    id: 15,
-    name: "Aurora",
-    category: "Earrings",
-    price: "$1,750",
-    image: ear3,
-  },
-  {
-    id: 16,
-    name: "Nebula",
-    category: "Earrings",
-    price: "$1,850",
-    image: ear11,
-  },
-  {
-    id: 17,
-    name: "Orbit",
-    category: "Earrings",
-    price: "$2,350",
-    image: ear22,
-  },
-  {
-    id: 18,
-    name: "Galaxy",
-    category: "Bracelets",
-    price: "$3,450",
-    image: ear33,
-  },
-  {
-    id: 19,
-    name: "Lunar",
-    category: "Earrings",
-    price: "$2,050",
-    image: ear1,
-  },
-  {
-    id: 20,
-    name: "Solar",
-    category: "Bracelets",
-    price: "$3,150",
-    image: ear2,
-  },
-  {
-    id: 21,
-    name: "Astral",
-    category: "Earrings",
-    price: "$1,650",
-    image: ear3,
-  },
-  {
-    id: 22,
-    name: "Cosmic",
-    category: "Earrings",
-    price: "$1,950",
-    image: ear11,
-  },
-  {
-    id: 23,
-    name: "Celestial",
-    category: "Earrings",
-    price: "$2,250",
-    image: ear22,
-  },
-  {
-    id: 24,
-    name: "Ethereal",
-    category: "Bracelets",
-    price: "$3,750",
-    image: ear33,
+    ...getProductImages(7),
   },
 ];
 
@@ -201,11 +101,16 @@ const ProductGrid = () => {
                 className="border-none shadow-none bg-transparent group cursor-pointer"
               >
                 <CardContent className="p-0">
-                  <div className="aspect-square mb-3 overflow-hidden bg-muted/10 relative">
+                  <div className="aspect-square mb-3 overflow-hidden bg-muted/10 relative group/image">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-opacity duration-300 group-hover/image:opacity-0"
+                    />
+                    <img
+                      src={product.image2}
+                      alt={`${product.name} view 2`}
+                      className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover/image:opacity-100"
                     />
                     <div className="absolute inset-0 bg-black/[0.03]"></div>
                     {product.isNew && (

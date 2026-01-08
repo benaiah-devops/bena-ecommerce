@@ -21,7 +21,7 @@ const CustomerCare = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Customer Care" 
-          subtitle="We're here to help you with all your jewelry needs"
+          subtitle="Thoughtful support for every step of your journey with us"
         />
         
         <ContentSection title="Contact Information">
@@ -50,55 +50,55 @@ const CustomerCare = () => {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="shipping" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                What are your shipping options and timeframes?
+                How will my order be delivered?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                We offer free standard shipping (3-5 business days) on orders over $500. Express shipping (1-2 business days) is available for $25. All orders are fully insured and require signature confirmation.
+                We provide complimentary standard delivery within 5-7 business days for orders exceeding $500. For those requiring expedited service, express delivery arrives within 2-3 business days for an additional $30. Every shipment is fully insured and requires signature upon receipt to ensure secure delivery.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="returns" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                What is your return and exchange policy?
+                Can I return or exchange my purchase?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                We offer a 30-day return policy for unworn items in original condition. Custom and engraved pieces are final sale. Returns are free with our prepaid return label.
+                Items may be returned within 28 days of delivery, provided they remain unworn and in their original packaging with all accompanying documentation. Bespoke and personalized pieces cannot be returned. We provide a prepaid return label at no cost to you, making the process as seamless as possible.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="warranty" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                What warranty do you offer on your jewelry?
+                What protection comes with my purchase?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                All Bena accessories come with a lifetime warranty against manufacturing defects. This includes free repairs for normal wear and tear, and professional maintenance services.
+                Every Bena piece is protected by our lifetime guarantee against defects in materials and workmanship. We also provide complimentary maintenance services for the natural wear that comes with regular use, ensuring your accessory remains in beautiful condition throughout its lifetime.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="sizing" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                Can I resize my jewelry after purchase?
+                Is resizing available for my piece?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Yes, we offer free ring resizing within 60 days of purchase (up to 2 sizes). Additional resizing is available for a service fee. Some designs cannot be resized due to their construction.
+                Ring resizing is complimentary within the first 90 days, accommodating adjustments up to two sizes in either direction. Subsequent resizing or more significant alterations are available for a modest service fee. Please note that certain designs, due to their structural integrity, cannot be safely resized.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="care" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                How should I care for my Bena accessories?
+                What care does my accessory require?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Store pieces separately in soft pouches, avoid contact with chemicals and cosmetics, and clean gently with a soft cloth. We recommend professional cleaning every 6-12 months.
+                Treat your Bena piece with gentle consideration. Store it in its provided pouch, away from other items that might scratch. Remove before applying perfumes, lotions, or engaging in activities that expose it to harsh chemicals. A soft, dry cloth is sufficient for daily care. We suggest bringing your piece to us for professional attention every six to twelve months.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="authentication" className="border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
-                How can I verify the authenticity of my jewelry?
+                How do I confirm my piece is authentic?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Every Bena piece comes with a certificate of authenticity and is hallmarked. You can verify authenticity on our website using your unique piece number or contact our customer care team.
+                Each Bena creation is accompanied by a certificate of authenticity and bears our distinctive hallmark. The unique identifier on your certificate can be verified through our online system, or you may contact our care team directly for confirmation and any additional documentation you may require.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

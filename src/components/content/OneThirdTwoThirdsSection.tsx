@@ -18,10 +18,10 @@ const OneThirdTwoThirdsSection = () => {
           </Link>
           <div className="">
             <h3 className="text-sm font-normal text-foreground mb-1">
-              Master Craftsmanship
+              Artisan Legacy
             </h3>
             <p className="text-sm font-light text-foreground">
-              Handcrafted pieces with exceptional attention to detail
+              Each creation bears the mark of dedicated hands and discerning eyes
             </p>
           </div>
         </div>
@@ -38,10 +38,10 @@ const OneThirdTwoThirdsSection = () => {
           </Link>
           <div className="">
             <h3 className="text-sm font-normal text-foreground mb-1">
-              Modern Geometry
+              Pure Contours
             </h3>
             <p className="text-sm font-light text-foreground">
-              Precise forms meet refined minimalism
+              Clean lines that define space with intentional restraint
             </p>
           </div>
         </div>

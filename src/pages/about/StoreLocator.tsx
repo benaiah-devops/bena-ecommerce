@@ -43,7 +43,7 @@ const StoreLocator = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Store Locator" 
-          subtitle="Visit us in person for a personalized jewelry experience"
+          subtitle="Spaces designed for contemplation and connection"
         />
         
         <ContentSection title="Interactive Store Map">
@@ -93,26 +93,26 @@ const StoreLocator = () => {
         <ContentSection title="Private Appointments">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Experience personalized service with a private appointment. Our jewelry consultants will guide you through our collections, help with custom designs, and provide expert advice in a comfortable, private setting.
+              Reserve time in our private consultation space, where the pace slows and attention deepens. Our specialists work with you to understand your preferences, explore our collections without distraction, and collaborate on bespoke creations in an environment designed for thoughtful consideration.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="space-y-3">
-                <h4 className="text-lg font-light text-foreground">Personal Shopping</h4>
+                <h4 className="text-lg font-light text-foreground">Curated Selection</h4>
                 <p className="text-muted-foreground text-sm">
-                  One-on-one guidance to find the perfect piece for any occasion
+                  Dedicated time with our specialists to discover pieces that resonate with your personal aesthetic
                 </p>
               </div>
               <div className="space-y-3">
-                <h4 className="text-lg font-light text-foreground">Custom Design</h4>
+                <h4 className="text-lg font-light text-foreground">Bespoke Creation</h4>
                 <p className="text-muted-foreground text-sm">
-                  Work with our designers to create a unique piece just for you
+                  Collaborate with our design team to bring your vision to life through a process of careful refinement
                 </p>
               </div>
               <div className="space-y-3">
-                <h4 className="text-lg font-light text-foreground">Expert Services</h4>
+                <h4 className="text-lg font-light text-foreground">Ongoing Care</h4>
                 <p className="text-muted-foreground text-sm">
-                  Professional appraisals, repairs, and maintenance services
+                  Comprehensive support including authentication, restoration, and preservation of your Bena pieces
                 </p>
               </div>
             </div>
@@ -127,10 +127,9 @@ const StoreLocator = () => {
 
         <ContentSection title="Virtual Consultations">
           <div className="bg-muted/10 rounded-lg p-8">
-            <h3 className="text-xl font-light text-foreground mb-4">Can't visit in person?</h3>
+            <h3 className="text-xl font-light text-foreground mb-4">Distance is no barrier</h3>
             <p className="text-muted-foreground mb-6">
-              Book a virtual consultation with one of our jewelry experts. We'll showcase pieces via video call, 
-              answer your questions, and help you make the perfect selection from the comfort of your home.
+              Our virtual consultations bring the Bena experience to you, wherever you are. Through video connection, we present pieces in detail, discuss your preferences, and guide you toward selections that align with your vision, all from the comfort of your own space.
             </p>
             <Button variant="outline" className="rounded-none">
               Book Virtual Consultation

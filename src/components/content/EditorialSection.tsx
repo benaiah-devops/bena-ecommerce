@@ -6,9 +6,9 @@ const EditorialSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-4 max-w-[630px]">
           <h2 className="text-2xl font-normal text-foreground leading-tight md:text-xl">
-            Accessories Defined by Precision and Form
+            Where Silence Speaks Louder Than Decoration
           </h2>
-          <p className="text-sm font-light text-foreground leading-relaxed">Bena was established in 1989 with a vision to create luxury accessories that transcend trends. Our founders believed that true luxury lies in the perfect balance of form, function, and craftsmanship — where every detail is considered and every piece tells a story of refined elegance.
+          <p className="text-sm font-light text-foreground leading-relaxed">Since 1989, Bena has quietly redefined what luxury means. We create accessories that don't demand attention but earn it through their quiet presence. In a world of excess, we choose restraint. In an era of loud statements, we prefer whispers. Each piece is an exercise in subtraction — removing everything unnecessary until only essential beauty remains.
 
         </p>
           <Link to="/about/our-story" className="inline-flex items-center gap-1 text-sm font-light text-foreground hover:text-foreground/80 transition-colors duration-200">

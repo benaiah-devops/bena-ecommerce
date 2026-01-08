@@ -17,27 +17,27 @@ const Sustainability = () => {
         <main className="w-full lg:w-[70vw] lg:ml-auto px-6">
         <PageHeader 
           title="Sustainability" 
-          subtitle="Creating beautiful jewelry while protecting our planet for future generations"
+          subtitle="Responsibility woven into every thread of our practice"
         />
         
         <ContentSection title="Our Environmental Commitment">
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             <div className="space-y-6">
-              <h3 className="text-xl font-light text-foreground">Ethical Sourcing</h3>
+              <h3 className="text-xl font-light text-foreground">Conscious Origins</h3>
               <p className="text-muted-foreground leading-relaxed">
-                We partner only with suppliers who share our commitment to ethical practices. Every gemstone and precious metal in our collection is sourced responsibly, with full transparency in our supply chain.
+                We trace the journey of every material that enters our workshop. Our partnerships are built on shared values of respect—for the earth, for the hands that extract and refine, and for the communities that make our work possible. Transparency isn't a marketing term for us; it's a fundamental requirement.
               </p>
             </div>
             <div className="space-y-6">
-              <h3 className="text-xl font-light text-foreground">Recycled Materials</h3>
+              <h3 className="text-xl font-light text-foreground">Renewed Purpose</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Over 80% of our precious metals come from recycled sources, reducing the environmental impact of mining while maintaining the highest quality standards for our jewelry.
+                We see beauty in transformation. The majority of our materials have lived previous lives, and we honor that history by giving them new form. This approach reduces our environmental footprint while creating pieces that carry the quiet wisdom of materials that have already proven their durability.
               </p>
             </div>
           </div>
 
           <div className="bg-muted/10 rounded-lg p-8">
-            <h3 className="text-2xl font-light text-foreground mb-6">Our Impact Goals</h3>
+            <h3 className="text-2xl font-light text-foreground mb-6">Measured Progress</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <div className="text-3xl font-light text-primary mb-2">100%</div>
@@ -57,21 +57,21 @@ const Sustainability = () => {
 
         <ContentSection title="Circular Economy">
           <div className="space-y-8">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We believe in the power of circular design - creating jewelry that can be treasured, repaired, and eventually recycled into new pieces.
+              <p className="text-lg text-muted-foreground leading-relaxed">
+              We design for longevity, not obsolescence. Each piece is created with the understanding that it may outlive its original owner, passing through generations or returning to us to be transformed once more. This circular thinking informs every design decision we make.
             </p>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="text-lg font-light text-foreground">Lifetime Care</h3>
+                <h3 className="text-lg font-light text-foreground">Enduring Support</h3>
                 <p className="text-muted-foreground">
-                  Every piece comes with our lifetime care promise, including professional cleaning, repairs, and resizing services.
+                  Your Bena piece is not a transaction; it's the beginning of a relationship. We commit to maintaining and restoring your accessories for as long as they exist, ensuring they continue to serve their purpose beautifully.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-lg font-light text-foreground">Take-Back Program</h3>
+                <h3 className="text-lg font-light text-foreground">Return to Source</h3>
                 <p className="text-muted-foreground">
-                  When you're ready for something new, we'll take back your Bena accessories to be recycled into future pieces.
+                  When the time comes to part with your piece, we welcome it back. Through our return program, materials find new life in future collections, continuing the cycle of thoughtful creation.
                 </p>
               </div>
             </div>
@@ -81,7 +81,7 @@ const Sustainability = () => {
         <ContentSection title="Certifications & Partnerships">
           <div className="space-y-8">
             <p className="text-muted-foreground leading-relaxed">
-              Our commitment to sustainability is verified through partnerships with leading organizations and certifications that hold us accountable to the highest standards.
+              We submit our practices to independent verification, not for accolades, but for accountability. These partnerships ensure we remain honest in our commitments and transparent in our progress.
             </p>
             
             <div className="grid md:grid-cols-4 gap-8 items-center">

@@ -18,10 +18,10 @@ const FiftyFiftySection = () => {
           </Link>
           <div className="">
             <h3 className="text-sm font-normal text-foreground mb-1">
-              Refined Collections
+              Curated Essence
             </h3>
             <p className="text-sm font-light text-foreground">
-              Curated pieces with sophisticated, architectural details
+              Thoughtfully selected designs that speak in quiet confidence
             </p>
           </div>
         </div>
@@ -38,10 +38,10 @@ const FiftyFiftySection = () => {
           </Link>
           <div className="">
             <h3 className="text-sm font-normal text-foreground mb-1">
-              Signature Links
+              Fluid Connections
             </h3>
             <p className="text-sm font-light text-foreground">
-              Elegant connections in premium materials
+              Seamless forms that move with effortless grace
             </p>
           </div>
         </div>

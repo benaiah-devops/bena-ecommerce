@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-full bg-white text-black pt-8 pb-2 px-6 border-t border-[#e5e5e5] mt-48">
+    <footer className="w-full bg-white text-black pt-8 pb-2 px-6 border-t border-[#e5e5e5] mt-16">
       <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
           {/* Brand - Left side */}
@@ -11,7 +11,7 @@ const Footer = () => {
               className="mb-4 h-6 w-auto"
             />
             <p className="text-sm font-light text-black/70 leading-relaxed max-w-md mb-6">
-              Luxury accessories crafted for the modern individual
+              Where restraint becomes the ultimate form of expression
             </p>
             
             {/* Contact Information */}

@@ -12,10 +12,10 @@ const LargeHero = () => {
       </div>
       <div className="">
         <h2 className="text-sm font-normal text-foreground mb-1">
-          Timeless Elegance
+          Essence of Refinement
         </h2>
         <p className="text-sm font-light text-foreground">
-          Luxury accessories crafted with precision and refined minimalism
+          Where subtlety meets sophistication in every carefully considered detail
         </p>
       </div>
     </section>

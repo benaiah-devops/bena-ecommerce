@@ -43,13 +43,14 @@ const ProductDescription = () => {
         {isDescriptionOpen && (
           <div className="pb-6 space-y-4">
             <p className="text-sm font-light text-muted-foreground leading-relaxed">
-              This piece embodies refined elegance with its clean, geometric design. 
-              Inspired by architectural precision, these accessories feature a sophisticated 
-              interplay of form and function that reflects light beautifully.
+              This design emerges from a philosophy of essential form. Every curve serves a purpose, every line 
+              exists by necessity. The result is an accessory that feels both intentional and effortless, 
+              capturing light in ways that reveal its character gradually.
             </p>
             <p className="text-sm font-light text-muted-foreground leading-relaxed">
-              Each piece is meticulously crafted from premium materials, ensuring both durability and luxury. 
-              The minimalist aesthetic makes them perfect for both everyday wear and special occasions.
+              Crafted with materials selected for their inherent beauty and longevity, this piece is built to 
+              become part of your daily ritual. Its understated presence means it transitions seamlessly from 
+              morning to evening, from casual to formal, without ever feeling out of place.
             </p>
           </div>
         )}
@@ -77,7 +78,7 @@ const ProductDescription = () => {
             </div>
             <div className="flex justify-between">
               <span className="text-sm font-light text-muted-foreground">Collection</span>
-              <span className="text-sm font-light text-foreground">Signature Series</span>
+              <span className="text-sm font-light text-foreground">Essential Collection</span>
             </div>
             <div className="flex justify-between">
               <span className="text-sm font-light text-muted-foreground">Closure</span>
@@ -108,13 +109,13 @@ const ProductDescription = () => {
         {isCareOpen && (
           <div className="pb-6 space-y-4">
             <ul className="space-y-2">
-              <li className="text-sm font-light text-muted-foreground">• Clean with a soft, dry cloth after each wear</li>
-              <li className="text-sm font-light text-muted-foreground">• Avoid contact with perfumes, lotions, and cleaning products</li>
-              <li className="text-sm font-light text-muted-foreground">• Store in the provided jewelry pouch when not wearing</li>
-              <li className="text-sm font-light text-muted-foreground">• Remove before swimming, exercising, or showering</li>
+              <li className="text-sm font-light text-muted-foreground">• Gently wipe with a microfiber cloth after wearing to remove oils and residue</li>
+              <li className="text-sm font-light text-muted-foreground">• Keep away from harsh chemicals, including hairspray, perfume, and household cleaners</li>
+              <li className="text-sm font-light text-muted-foreground">• Rest in its protective pouch when not in use, separate from other accessories</li>
+              <li className="text-sm font-light text-muted-foreground">• Remove during activities involving water, perspiration, or physical exertion</li>
             </ul>
             <p className="text-sm font-light text-muted-foreground">
-              For professional cleaning, visit your local jeweler or contact our customer service team.
+              For deeper maintenance, we recommend bringing your piece to one of our locations or contacting our care team to arrange professional service.
             </p>
           </div>
         )}
@@ -165,8 +166,9 @@ const ProductDescription = () => {
                   <span className="text-sm font-light text-muted-foreground">Sarah M.</span>
                 </div>
                 <p className="text-sm font-light text-muted-foreground leading-relaxed">
-                  "Absolutely stunning pieces! The quality is exceptional and they complement every outfit. 
-                  The refined design is so distinctive and I receive compliments every time I wear them."
+                  "There's something quietly powerful about this piece. It doesn't announce itself, but when 
+                  people notice it, they're drawn to its subtle sophistication. The quality is evident in 
+                  how it feels—substantial yet light, present yet unobtrusive."
                 </p>
               </div>
 
@@ -183,8 +185,9 @@ const ProductDescription = () => {
                   <span className="text-sm font-light text-muted-foreground">Emma T.</span>
                 </div>
                 <p className="text-sm font-light text-muted-foreground leading-relaxed">
-                  "Exceptional craftsmanship and comfortable to wear all day. The premium finish has maintained 
-                  its elegance perfectly after months of regular wear. Highly recommend!"
+                  "I've worn this nearly every day for six months, and it still looks as refined as the day 
+                  I received it. The attention to detail in the finish means it ages beautifully. It's become 
+                  an essential part of my daily uniform."
                 </p>
               </div>
 
@@ -201,8 +204,9 @@ const ProductDescription = () => {
                   <span className="text-sm font-light text-muted-foreground">Jessica R.</span>
                 </div>
                 <p className="text-sm font-light text-muted-foreground leading-relaxed">
-                  "These pieces are a work of art. The refined design is elegant and sophisticated. 
-                  Perfect weight and the packaging was exquisite too."
+                  "The restraint in the design is what makes it so compelling. Nothing is excessive, yet 
+                  everything feels considered. Even the unboxing experience reflected the brand's commitment 
+                  to thoughtful details. A truly exceptional piece."
                 </p>
               </div>
             </div>

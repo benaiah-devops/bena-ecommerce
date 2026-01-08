@@ -1,4 +1,4 @@
-import chatgptHero from "@/assets/ChatGPT Image Jan 8, 2026, 09_35_11 AM.png";
+import chatgptHero from "@/assets/ChatGPT Image Jan 8, 2026, 09_35_13 AM.png";
 
 const LargeHero = () => {
   return (

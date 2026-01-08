@@ -2,8 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import chatgptHero1 from "@/assets/ChatGPT Image Jan 8, 2026, 09_35_11 AM.png";
-import chatgptHero2 from "@/assets/ChatGPT Image Jan 8, 2026, 09_35_13 AM.png";
-import chatgptHero3 from "@/assets/ChatGPT Image Jan 8, 2026, 09_41_33 AM.png";
 
 const AnimatedHeroSection = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -35,32 +33,18 @@ const AnimatedHeroSection = () => {
       className="w-full relative overflow-hidden mb-16"
       style={{ minHeight: "90vh" }}
     >
-      {/* Animated Background Images */}
+      {/* Animated Background Image */}
       <div className="absolute inset-0">
         <div 
           className="absolute inset-0 transition-transform duration-1000 ease-out"
           style={{
             transform: `translateY(${parallaxOffset}px)`,
-            opacity: isVisible ? 1 : 0.7,
           }}
         >
           <img 
             src={chatgptHero1} 
             alt="Luxury Collection" 
             className="w-full h-full object-cover"
-          />
-        </div>
-        <div 
-          className="absolute inset-0 transition-all duration-1000 ease-out"
-          style={{
-            transform: `translateY(${parallaxOffset * 0.5}px) scale(1.05)`,
-            opacity: isVisible ? 0.3 : 0,
-          }}
-        >
-          <img 
-            src={chatgptHero2} 
-            alt="Elegant Design" 
-            className="w-full h-full object-cover mix-blend-overlay"
           />
         </div>
       </div>

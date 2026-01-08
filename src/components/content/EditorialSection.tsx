@@ -1,4 +1,4 @@
-import founders from "@/assets/founders.png";
+import chatgptFounders from "@/assets/ChatGPT Image Jan 8, 2026, 09_43_19 AM.png";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 const EditorialSection = () => {
@@ -19,7 +19,7 @@ const EditorialSection = () => {
         
         <div className="order-first md:order-last">
           <div className="w-full aspect-square overflow-hidden">
-            <img src={founders} alt="Bena founders" className="w-full h-full object-cover" />
+            <img src={chatgptFounders} alt="Bena founders" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
